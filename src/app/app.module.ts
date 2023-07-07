@@ -9,7 +9,6 @@ import { PostDetailComponent } from './components/post-detail/post-detail.compon
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { FormsModule } from '@angular/forms';
-import { authInterceptorProviders } from './services/helper';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { authInterceptorProviders } from './services/helper';
     HttpClientModule,
     FormsModule
   ],
-  providers: [authInterceptorProviders],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
